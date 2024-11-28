@@ -1,7 +1,9 @@
+import { createTask } from "@/actions/sampleActions";
+
 const ServerActionsPage = () => {
   return (
     <div>
-      <form action="">
+      <form action={createTask}>
         <input type="text" id="name" name="name" className="bg-gray-200" />
         <button type="submit" className="bg-gray-400 ml-2 px-2">
           送信
